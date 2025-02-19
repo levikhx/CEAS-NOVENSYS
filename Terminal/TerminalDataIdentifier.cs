@@ -9,7 +9,7 @@ using System.Globalization;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Novensys.eCard.SDK.Terminal
+namespace Novensys.eCard.SDK.offline.Terminal
 {
   internal class TerminalDataIdentifier
   {

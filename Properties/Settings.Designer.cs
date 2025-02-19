@@ -9,7 +9,7 @@ using System.Configuration;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace Novensys.eCard.SDK.Properties
+namespace Novensys.eCard.SDK.offline.Properties
 {
   [CompilerGenerated]
   [GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]

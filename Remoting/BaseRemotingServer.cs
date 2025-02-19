@@ -9,7 +9,7 @@ using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Ipc;
 
-namespace Novensys.eCard.SDK.Remoting
+namespace Novensys.eCard.SDK.offline.Remoting
 {
   public abstract class BaseRemotingServer : IRemoting
   {

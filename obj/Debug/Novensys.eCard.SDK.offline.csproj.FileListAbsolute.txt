@@ -1,0 +1,8 @@
+C:\Work\Prodia\MedicusPro\ecard-ceas\bin\Debug\Novensys.eCard.SDK.offline.dll
+C:\Work\Prodia\MedicusPro\ecard-ceas\bin\Debug\Novensys.eCard.SDK.offline.pdb
+C:\Work\Prodia\MedicusPro\ecard-ceas\bin\Debug\BouncyCastle.Crypto.dll
+C:\Work\Prodia\MedicusPro\ecard-ceas\obj\Debug\Novensys.eCard.SDK.offline.csproj.AssemblyReference.cache
+C:\Work\Prodia\MedicusPro\ecard-ceas\obj\Debug\Novensys.eCard.SDK.offline.csproj.CoreCompileInputs.cache
+C:\Work\Prodia\MedicusPro\ecard-ceas\obj\Debug\Novensys.8E1BE877.Up2Date
+C:\Work\Prodia\MedicusPro\ecard-ceas\obj\Debug\Novensys.eCard.SDK.offline.dll
+C:\Work\Prodia\MedicusPro\ecard-ceas\obj\Debug\Novensys.eCard.SDK.offline.pdb

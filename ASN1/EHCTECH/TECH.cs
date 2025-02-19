@@ -9,7 +9,7 @@ using Novensys.ASN1.Type;
 using System;
 using System.ComponentModel;
 
-namespace Novensys.eCard.SDK.ASN1.EHCTECH
+namespace Novensys.eCard.SDK.offline.ASN1.EHCTECH
 {
   [Serializable]
   public class TECH : Asn1SequenceType

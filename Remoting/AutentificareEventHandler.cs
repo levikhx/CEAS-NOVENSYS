@@ -6,7 +6,7 @@
 
 using Novensys.eCard.SDK;
 
-namespace Novensys.eCard.SDK.Remoting
+namespace Novensys.eCard.SDK.offline.Remoting
 {
   public delegate CoduriRaspunsOperatieCard AutentificareEventHandler(string pinBlock, ref int retryCounter, string cardNumber, string terminalId, ref bool canResetPIN, string certificateSerialNumber, ref bool needUpdate);
 }

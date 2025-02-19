@@ -5,10 +5,10 @@
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
 using Novensys.eCard.SDK;
-using Novensys.eCard.SDK.Entities;
-using Novensys.eCard.SDK.ISO8583;
-using Novensys.eCard.SDK.Remoting;
-using Novensys.eCard.SDK.Utils.Log;
+using Novensys.eCard.SDK.offline.Entities;
+using Novensys.eCard.SDK.offline.ISO8583;
+using Novensys.eCard.SDK.offline.Remoting;
+using Novensys.eCard.SDK.offline.Utils.Log;
 using System;
 using System.Configuration;
 using System.Globalization;
@@ -16,7 +16,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 
-namespace Novensys.eCard.SDK.TCPCommunication
+namespace Novensys.eCard.SDK.offline.TCPCommunication
 {
   public class CommunicationService
   {

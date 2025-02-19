@@ -4,23 +4,23 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.Entities;
-using Novensys.eCard.SDK.Entities.SmartCard;
-using Novensys.eCard.SDK.Entities.Terminal;
-using Novensys.eCard.SDK.PCSC;
-using Novensys.eCard.SDK.PCSC.Apdu;
-using Novensys.eCard.SDK.TCPCommunication;
-using Novensys.eCard.SDK.Terminal;
-using Novensys.eCard.SDK.Utils.Crypto;
-using Novensys.eCard.SDK.Utils.Hex;
-using Novensys.eCard.SDK.Utils.Log;
+using Novensys.eCard.SDK.offline.Entities;
+using Novensys.eCard.SDK.offline.Entities.SmartCard;
+using Novensys.eCard.SDK.offline.Entities.Terminal;
+using Novensys.eCard.SDK.offline.PCSC;
+using Novensys.eCard.SDK.offline.PCSC.Apdu;
+using Novensys.eCard.SDK.offline.TCPCommunication;
+using Novensys.eCard.SDK.offline.Terminal;
+using Novensys.eCard.SDK.offline.Utils.Crypto;
+using Novensys.eCard.SDK.offline.Utils.Hex;
+using Novensys.eCard.SDK.offline.Utils.Log;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-namespace Novensys.eCard.SDK
+namespace Novensys.eCard.SDK.offline
 {
   [Serializable]
   public class SesiuneCard : SesiuneLucru, ISesiuneCard
@@ -416,12 +416,12 @@ namespace Novensys.eCard.SDK
       {
         LogManager.AddSeparatorLine();
         LogManager.FileLog("Start Citire Date");
-        raspunsOperatieCard = this.MapEnum(this.TerminalManager.VerificaTerminal(true));
-        if (raspunsOperatieCard != CoduriRaspunsOperatieCard.OK)
-          return (int) raspunsOperatieCard;
+        //raspunsOperatieCard = this.MapEnum(this.TerminalManager.VerificaTerminal(true));
+        //if (raspunsOperatieCard != CoduriRaspunsOperatieCard.OK)
+        //  return (int) raspunsOperatieCard;
         raspunsOperatieCard = this.TerminalManager.VerificaCardValid();
         if (raspunsOperatieCard != CoduriRaspunsOperatieCard.OK)
-          return (int) raspunsOperatieCard;
+            return (int)raspunsOperatieCard;
         raspunsOperatieCard = this.TerminalManager.VerificaCardActivat();
         if (raspunsOperatieCard != CoduriRaspunsOperatieCard.OK)
           return (int) raspunsOperatieCard;
@@ -434,9 +434,9 @@ namespace Novensys.eCard.SDK
           return -11;
         if (this.TerminalManager.StareAutentificare == StariAutentificare.AUTENTIFICAT)
         {
-          raspunsOperatieCard = this.TerminalManager.VerificaToken(token);
-          if (raspunsOperatieCard != CoduriRaspunsOperatieCard.OK)
-            return (int) raspunsOperatieCard;
+          //raspunsOperatieCard = this.TerminalManager.VerificaToken(token);
+          //if (raspunsOperatieCard != CoduriRaspunsOperatieCard.OK)
+          //  return (int) raspunsOperatieCard;
         }
         cardData.StareCard = StareCard.Activ;
         raspunsOperatieCard = this.TerminalManager.CitesteDate(campuriDeCitit, cardData, rezultatOperatie);
@@ -718,8 +718,8 @@ namespace Novensys.eCard.SDK
           LogManager.AddSeparatorLine();
           LogManager.FileLog("Start Inserare Card");
           raspunsOperatieCard = this.MapEnum(this.TerminalManager.VerificaTerminal(true));
-          if (raspunsOperatieCard != CoduriRaspunsOperatieCard.OK)
-            throw new Exception(this.TerminalManager.MesajeRaspunsCard[raspunsOperatieCard]);
+          //if (raspunsOperatieCard != CoduriRaspunsOperatieCard.OK)
+          //  throw new Exception(this.TerminalManager.MesajeRaspunsCard[raspunsOperatieCard]);
           raspunsOperatieCard = this.TerminalManager.VerificaCardValid();
           if (raspunsOperatieCard != CoduriRaspunsOperatieCard.OK)
             throw new Exception(this.TerminalManager.MesajeRaspunsCard[raspunsOperatieCard]);

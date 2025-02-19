@@ -7,7 +7,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Novensys.eCard.SDK.Entities.Terminal
+namespace Novensys.eCard.SDK.offline.Entities.Terminal
 {
   [Serializable]
   public class ActualizareTerminalData

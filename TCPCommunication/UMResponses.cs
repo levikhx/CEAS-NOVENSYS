@@ -7,7 +7,7 @@
 using Novensys.eCard.SDK;
 using System.Collections.Generic;
 
-namespace Novensys.eCard.SDK.TCPCommunication
+namespace Novensys.eCard.SDK.offline.TCPCommunication
 {
   public class UMResponses : Dictionary<string, CoduriRaspunsOperatieCard>
   {

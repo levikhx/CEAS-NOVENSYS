@@ -6,7 +6,7 @@
 
 using System.Text;
 
-namespace Novensys.eCard.SDK.ISO8583
+namespace Novensys.eCard.SDK.offline.ISO8583
 {
   public static class Utils
   {

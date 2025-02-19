@@ -6,7 +6,7 @@
 
 using System.Collections.Generic;
 
-namespace Novensys.eCard.SDK.Entities.SmartCard
+namespace Novensys.eCard.SDK.offline.Entities.SmartCard
 {
   public class FisierCard
   {

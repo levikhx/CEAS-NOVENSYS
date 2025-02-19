@@ -7,7 +7,7 @@
 using System;
 using System.ComponentModel;
 
-namespace Novensys.eCard.SDK.Entities.SmartCard
+namespace Novensys.eCard.SDK.offline.Entities.SmartCard
 {
   [Serializable]
   public class Camp : INotifyPropertyChanged

@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Novensys.eCard.SDK.TCPCommunication
+namespace Novensys.eCard.SDK.offline.TCPCommunication
 {
   public class CommunicationException : ApplicationException
   {

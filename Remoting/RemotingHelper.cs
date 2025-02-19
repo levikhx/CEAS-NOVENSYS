@@ -12,7 +12,7 @@ using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Ipc;
 using System.Runtime.Serialization.Formatters;
 
-namespace Novensys.eCard.SDK.Remoting
+namespace Novensys.eCard.SDK.offline.Remoting
 {
   public class RemotingHelper
   {

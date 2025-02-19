@@ -4,14 +4,14 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.PCSC.Apdu;
+using Novensys.eCard.SDK.offline.PCSC.Apdu;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 
-namespace Novensys.eCard.SDK.PCSC
+namespace Novensys.eCard.SDK.offline.PCSC
 {
   public class WinSCardContextJob
   {

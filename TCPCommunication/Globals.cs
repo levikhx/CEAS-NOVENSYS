@@ -6,7 +6,7 @@
 
 using System.Diagnostics;
 
-namespace Novensys.eCard.SDK.TCPCommunication
+namespace Novensys.eCard.SDK.offline.TCPCommunication
 {
   public static class Globals
   {

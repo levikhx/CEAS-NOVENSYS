@@ -4,12 +4,12 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.ISO8583;
-using Novensys.eCard.SDK.ISO8583.NetworkHeaders;
-using Novensys.eCard.SDK.Utils.Log;
+using Novensys.eCard.SDK.offline.ISO8583;
+using Novensys.eCard.SDK.offline.ISO8583.NetworkHeaders;
+using Novensys.eCard.SDK.offline.Utils.Log;
 using System;
 
-namespace Novensys.eCard.SDK.TCPCommunication
+namespace Novensys.eCard.SDK.offline.TCPCommunication
 {
   public class CommunicationProcess : IDisposable
   {

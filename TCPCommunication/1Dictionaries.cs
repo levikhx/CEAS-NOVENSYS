@@ -6,7 +6,7 @@
 
 using System.Collections.Generic;
 
-namespace Novensys.eCard.SDK.TCPCommunication
+namespace Novensys.eCard.SDK.offline.TCPCommunication
 {
   public class Warnings : Dictionary<WarningCodes, string>
   {

@@ -4,14 +4,14 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.Entities;
-using Novensys.eCard.SDK.Entities.SmartCard;
-using Novensys.eCard.SDK.PCSC;
+using Novensys.eCard.SDK.offline.Entities;
+using Novensys.eCard.SDK.offline.Entities.SmartCard;
+using Novensys.eCard.SDK.offline.PCSC;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Novensys.eCard.SDK
+namespace Novensys.eCard.SDK.offline
 {
   public interface ISesiuneCard
   {

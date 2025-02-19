@@ -4,10 +4,10 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.Entities.Terminal;
+using Novensys.eCard.SDK.offline.Entities.Terminal;
 using System.Collections.Generic;
 
-namespace Novensys.eCard.SDK
+namespace Novensys.eCard.SDK.offline
 {
   public class MesajeRaspunsTerminal : Dictionary<CoduriRaspunsOperatieTerminal, string>
   {

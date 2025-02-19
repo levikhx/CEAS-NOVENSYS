@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Novensys.eCard.SDK.ISO8583.Formatter
+namespace Novensys.eCard.SDK.offline.ISO8583.Formatter
 {
   public class BcdFormatter : IFormatter
   {

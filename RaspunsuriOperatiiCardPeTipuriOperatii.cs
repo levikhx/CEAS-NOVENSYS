@@ -6,7 +6,7 @@
 
 using System.Collections.Generic;
 
-namespace Novensys.eCard.SDK
+namespace Novensys.eCard.SDK.offline
 {
   public class RaspunsuriOperatiiCardPeTipuriOperatii : List<RaspunsOperatieCardPeTipOperatie>
   {

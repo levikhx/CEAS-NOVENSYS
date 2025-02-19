@@ -4,24 +4,24 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.Entities;
-using Novensys.eCard.SDK.Entities.SmartCard;
-using Novensys.eCard.SDK.Entities.Terminal;
-using Novensys.eCard.SDK.PCSC;
-using Novensys.eCard.SDK.PCSC.Apdu;
-using Novensys.eCard.SDK.Remoting;
-using Novensys.eCard.SDK.TCPCommunication;
-using Novensys.eCard.SDK.Utils.ASN1;
-using Novensys.eCard.SDK.Utils.Crypto;
-using Novensys.eCard.SDK.Utils.Hex;
-using Novensys.eCard.SDK.Utils.Log;
+using Novensys.eCard.SDK.offline.Entities;
+using Novensys.eCard.SDK.offline.Entities.SmartCard;
+using Novensys.eCard.SDK.offline.Entities.Terminal;
+using Novensys.eCard.SDK.offline.PCSC;
+using Novensys.eCard.SDK.offline.PCSC.Apdu;
+using Novensys.eCard.SDK.offline.Remoting;
+using Novensys.eCard.SDK.offline.TCPCommunication;
+using Novensys.eCard.SDK.offline.Utils.ASN1;
+using Novensys.eCard.SDK.offline.Utils.Crypto;
+using Novensys.eCard.SDK.offline.Utils.Hex;
+using Novensys.eCard.SDK.offline.Utils.Log;
 using Org.BouncyCastle.Asn1.Cms;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Novensys.eCard.SDK
+namespace Novensys.eCard.SDK.offline
 {
   internal class TerminalManager : ICardTextReader
   {
@@ -345,7 +345,7 @@ namespace Novensys.eCard.SDK
 
     public CoduriRaspunsOperatieCard Autentificare(bool cuCererePIN)
     {
-      return this.Autentificare(cuCererePIN, true);
+      return this.Autentificare(cuCererePIN, false);
     }
 
     public CoduriRaspunsOperatieCard Autentificare(bool cuCererePIN, bool autentificareCuUM)
@@ -375,7 +375,7 @@ namespace Novensys.eCard.SDK
 
     public CoduriRaspunsOperatieCard ExecutaAutentificare(string pin)
     {
-      return this.ExecutaAutentificare(pin, true);
+      return this.ExecutaAutentificare(pin, false);
     }
 
     public CoduriRaspunsOperatieCard ExecutaAutentificare(string pin, bool autentificareCuUM)
@@ -420,17 +420,17 @@ namespace Novensys.eCard.SDK
               return raspunsOperatieCard1;
           }
           this.CardNumber = str;
-          if (!this.ProfilId.HasValue || this.ProfilId.HasValue && this.ProfilId.Value != 5)
-          {
-            this.PINBlock = CryptoHelper.CreatePinBlock(this.CardNumber, pin, this.TerminalData.CheieCriptarePIN);
-            this.PIN = pin;
-          }
-          else
-          {
-            this.CardNumber = "0000000000000000";
-            this.PIN = "0000";
-            this.PINBlock = CryptoHelper.CreatePinBlock(this.CardNumber, this.PIN, this.TerminalData.CheieCriptarePIN);
-          }
+          //if (!this.ProfilId.HasValue || this.ProfilId.HasValue && this.ProfilId.Value != 5)
+          //{
+          //this.PINBlock = CryptoHelper.CreatePinBlock(this.CardNumber, pin, this.TerminalData.CheieCriptarePIN);
+          this.PIN = pin;
+          //}
+          //else
+          //{
+          //  this.CardNumber = "0000000000000000";
+          //  this.PIN = "0000";
+          //  this.PINBlock = CryptoHelper.CreatePinBlock(this.CardNumber, this.PIN, this.TerminalData.CheieCriptarePIN);
+          //}
           int numarIncercariRamase = this.NumarIncercariRamase;
           if (!autentificareCuUM)
           {

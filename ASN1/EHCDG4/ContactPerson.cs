@@ -9,7 +9,7 @@ using Novensys.ASN1.Type;
 using System;
 using System.ComponentModel;
 
-namespace Novensys.eCard.SDK.ASN1.EHCDG4
+namespace Novensys.eCard.SDK.offline.ASN1.EHCDG4
 {
   [Serializable]
   public class ContactPerson : Asn1SequenceType

@@ -5,10 +5,10 @@
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
 using Novensys.eCard.SDK;
-using Novensys.eCard.SDK.Entities;
+using Novensys.eCard.SDK.offline.Entities;
 using System;
 
-namespace Novensys.eCard.SDK.Remoting
+namespace Novensys.eCard.SDK.offline.Remoting
 {
   public delegate string ObtineTokenEventHandler(string cif, IdentificatorDrepturi identificatorDrepturi, string terminalId, ref DateTime serverDateTime, ref CoduriRaspunsOperatieCard raspunsOperatie);
 }

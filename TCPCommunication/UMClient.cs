@@ -5,17 +5,17 @@
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
 using Novensys.eCard.SDK;
-using Novensys.eCard.SDK.Entities;
-using Novensys.eCard.SDK.ISO8583;
-using Novensys.eCard.SDK.Terminal;
-using Novensys.eCard.SDK.Utils.Log;
+using Novensys.eCard.SDK.offline.Entities;
+using Novensys.eCard.SDK.offline.ISO8583;
+using Novensys.eCard.SDK.offline.Terminal;
+using Novensys.eCard.SDK.offline.Utils.Log;
 using System;
 using System.Globalization;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 
-namespace Novensys.eCard.SDK.TCPCommunication
+namespace Novensys.eCard.SDK.offline.TCPCommunication
 {
   internal class UMClient
   {
@@ -43,6 +43,8 @@ namespace Novensys.eCard.SDK.TCPCommunication
       terminalId = (string) null;
       fileContent = (string) null;
       terminalMasterKey = (string) null;
+      raspunsOperatie = CoduriRaspunsOperatieCard.ERR_UM_INDISPONIBILA;
+      return;
       try
       {
         LogManager.AddSeparatorLine();

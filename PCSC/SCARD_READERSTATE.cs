@@ -7,7 +7,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Novensys.eCard.SDK.PCSC
+namespace Novensys.eCard.SDK.offline.PCSC
 {
   public struct SCARD_READERSTATE
   {

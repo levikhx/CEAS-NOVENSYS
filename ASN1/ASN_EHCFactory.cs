@@ -8,7 +8,7 @@ using Novensys.ASN1;
 using Novensys.ASN1.Util;
 using System.Collections;
 
-namespace Novensys.eCard.SDK.ASN1
+namespace Novensys.eCard.SDK.offline.ASN1
 {
   public class ASN_EHCFactory
   {

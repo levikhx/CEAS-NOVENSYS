@@ -8,7 +8,7 @@ using Novensys.ASN1.Type;
 using System;
 using System.ComponentModel;
 
-namespace Novensys.eCard.SDK.ASN1.EHCDG2
+namespace Novensys.eCard.SDK.offline.ASN1.EHCDG2
 {
   [Serializable]
   public class DG2 : Asn1SequenceType

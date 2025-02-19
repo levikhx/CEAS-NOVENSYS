@@ -6,7 +6,7 @@
 
 using System.Text.RegularExpressions;
 
-namespace Novensys.eCard.SDK.ISO8583.FieldValidator
+namespace Novensys.eCard.SDK.offline.ISO8583.FieldValidator
 {
   public class Track2FieldValidator : IFieldValidator
   {

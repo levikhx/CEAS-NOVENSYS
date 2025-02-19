@@ -10,7 +10,7 @@ using System.Globalization;
 using System.IO;
 using System.Reflection;
 
-namespace Novensys.eCard.SDK.Utils.Log
+namespace Novensys.eCard.SDK.offline.Utils.Log
 {
   public static class LogManager
   {

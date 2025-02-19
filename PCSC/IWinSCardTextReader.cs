@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Novensys.eCard.SDK.PCSC
+namespace Novensys.eCard.SDK.offline.PCSC
 {
   internal interface IWinSCardTextReader : IDisposable
   {

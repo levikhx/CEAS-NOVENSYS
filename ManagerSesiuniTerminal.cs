@@ -4,12 +4,12 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.PCSC;
-using Novensys.eCard.SDK.TCPCommunication;
+using Novensys.eCard.SDK.offline.PCSC;
+using Novensys.eCard.SDK.offline.TCPCommunication;
 using System;
 using System.Collections.Generic;
 
-namespace Novensys.eCard.SDK
+namespace Novensys.eCard.SDK.offline
 {
   public sealed class ManagerSesiuniTerminal
   {

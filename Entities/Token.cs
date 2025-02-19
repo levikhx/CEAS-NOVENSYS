@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Novensys.eCard.SDK.Entities
+namespace Novensys.eCard.SDK.offline.Entities
 {
   [Serializable]
   public class Token

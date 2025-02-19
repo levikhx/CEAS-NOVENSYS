@@ -7,7 +7,7 @@
 using System.Net;
 using System.Net.Sockets;
 
-namespace Novensys.eCard.SDK.TCPCommunication
+namespace Novensys.eCard.SDK.offline.TCPCommunication
 {
   public class TCPCServer
   {

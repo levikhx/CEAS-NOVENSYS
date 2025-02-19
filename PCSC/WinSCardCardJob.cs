@@ -4,9 +4,9 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.PCSC.Apdu;
-using Novensys.eCard.SDK.Utils.Hex;
-using Novensys.eCard.SDK.Utils.Log;
+using Novensys.eCard.SDK.offline.PCSC.Apdu;
+using Novensys.eCard.SDK.offline.Utils.Hex;
+using Novensys.eCard.SDK.offline.Utils.Log;
 using System;
 using System.Diagnostics;
 using System.Globalization;
@@ -14,7 +14,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 
-namespace Novensys.eCard.SDK.PCSC
+namespace Novensys.eCard.SDK.offline.PCSC
 {
   internal class WinSCardCardJob : IApduExchange, ICardTextReader
   {

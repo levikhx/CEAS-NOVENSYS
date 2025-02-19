@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Novensys.eCard.SDK
+namespace Novensys.eCard.SDK.offline
 {
   public enum TipTerminal
   {

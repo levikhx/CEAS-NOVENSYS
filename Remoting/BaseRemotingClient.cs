@@ -4,13 +4,13 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.Utils.Log;
+using Novensys.eCard.SDK.offline.Utils.Log;
 using System;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Ipc;
 
-namespace Novensys.eCard.SDK.Remoting
+namespace Novensys.eCard.SDK.offline.Remoting
 {
   public abstract class BaseRemotingClient : IRemoting
   {

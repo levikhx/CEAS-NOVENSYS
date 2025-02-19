@@ -4,13 +4,13 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.Properties;
-using Novensys.eCard.SDK.Utils.Log;
+using Novensys.eCard.SDK.offline.Properties;
+using Novensys.eCard.SDK.offline.Utils.Log;
 using System;
 using System.Net;
 using System.Net.Sockets;
 
-namespace Novensys.eCard.SDK.TCPCommunication
+namespace Novensys.eCard.SDK.offline.TCPCommunication
 {
   internal static class IPAddressUM
   {

@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Novensys.eCard.SDK.PCSC.Apdu
+namespace Novensys.eCard.SDK.offline.PCSC.Apdu
 {
   public class ApduUtil
   {

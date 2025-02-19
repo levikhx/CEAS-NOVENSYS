@@ -4,17 +4,17 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.Entities.SmartCard;
-using Novensys.eCard.SDK.Entities.Terminal;
-using Novensys.eCard.SDK.Utils.Crypto;
-using Novensys.eCard.SDK.Utils.Hex;
+using Novensys.eCard.SDK.offline.Entities.SmartCard;
+using Novensys.eCard.SDK.offline.Entities.Terminal;
+using Novensys.eCard.SDK.offline.Utils.Crypto;
+using Novensys.eCard.SDK.offline.Utils.Hex;
 using System;
 using System.Globalization;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Novensys.eCard.SDK.Terminal
+namespace Novensys.eCard.SDK.offline.Terminal
 {
   internal class TerminalDataStorage
   {

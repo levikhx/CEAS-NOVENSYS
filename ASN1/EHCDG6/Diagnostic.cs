@@ -9,7 +9,7 @@ using Novensys.ASN1.Type;
 using System;
 using System.ComponentModel;
 
-namespace Novensys.eCard.SDK.ASN1.EHCDG6
+namespace Novensys.eCard.SDK.offline.ASN1.EHCDG6
 {
   [Serializable]
   public class Diagnostic : Asn1SequenceType

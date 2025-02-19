@@ -7,7 +7,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Novensys.eCard.SDK.ISO8583
+namespace Novensys.eCard.SDK.offline.ISO8583
 {
   public class Iso8583MessageFactory
   {

@@ -7,7 +7,7 @@
 using System;
 using System.Text;
 
-namespace Novensys.eCard.SDK.Utils.Hex
+namespace Novensys.eCard.SDK.offline.Utils.Hex
 {
   public class HexFormatting
   {

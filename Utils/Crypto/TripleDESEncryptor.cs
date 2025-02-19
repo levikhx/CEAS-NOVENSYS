@@ -6,7 +6,7 @@
 
 using System.Security.Cryptography;
 
-namespace Novensys.eCard.SDK.Utils.Crypto
+namespace Novensys.eCard.SDK.offline.Utils.Crypto
 {
   public static class TripleDESEncryptor
   {

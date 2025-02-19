@@ -6,7 +6,7 @@
 
 using Novensys.eCard.SDK;
 
-namespace Novensys.eCard.SDK.Remoting
+namespace Novensys.eCard.SDK.offline.Remoting
 {
   public delegate CoduriRaspunsOperatieCard SchimbarePINEventHandler(string token, string cardNumber, ref int retryCounter, string terminalId, string pinBlockVechi, string pinBlockNou, string certificateSerialNumber);
 }

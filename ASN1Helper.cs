@@ -7,22 +7,22 @@
 using Novensys.ASN1;
 using Novensys.ASN1.Type;
 using Novensys.eCard.SDK;
-using Novensys.eCard.SDK.ASN1;
-using Novensys.eCard.SDK.ASN1.EHCDG1;
-using Novensys.eCard.SDK.ASN1.EHCDG11;
-using Novensys.eCard.SDK.ASN1.EHCDG2;
-using Novensys.eCard.SDK.ASN1.EHCDG3;
-using Novensys.eCard.SDK.ASN1.EHCDG4;
-using Novensys.eCard.SDK.ASN1.EHCDG5;
-using Novensys.eCard.SDK.ASN1.EHCDG6;
-using Novensys.eCard.SDK.ASN1.EHCDG7;
-using Novensys.eCard.SDK.ASN1.EHCDG8;
-using Novensys.eCard.SDK.ASN1.EHCDG9;
-using Novensys.eCard.SDK.ASN1.EHCTECH;
-using Novensys.eCard.SDK.ASN1.EHDG10;
-using Novensys.eCard.SDK.Entities.SmartCard;
-using Novensys.eCard.SDK.PCSC.Apdu;
-using Novensys.eCard.SDK.Utils.Crypto;
+using Novensys.eCard.SDK.offline.ASN1;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG1;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG11;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG2;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG3;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG4;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG5;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG6;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG7;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG8;
+using Novensys.eCard.SDK.offline.ASN1.EHCDG9;
+using Novensys.eCard.SDK.offline.ASN1.EHCTECH;
+using Novensys.eCard.SDK.offline.ASN1.EHDG10;
+using Novensys.eCard.SDK.offline.Entities.SmartCard;
+using Novensys.eCard.SDK.offline.PCSC.Apdu;
+using Novensys.eCard.SDK.offline.Utils.Crypto;
 using Org.BouncyCastle.Asn1;
 using Org.BouncyCastle.Asn1.Cms;
 using Org.BouncyCastle.Asn1.Ess;
@@ -34,7 +34,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Novensys.eCard.SDK.Utils.ASN1
+namespace Novensys.eCard.SDK.offline.Utils.ASN1
 {
   public class ASN1Helper
   {

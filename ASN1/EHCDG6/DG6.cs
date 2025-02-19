@@ -7,12 +7,12 @@
 using Novensys.ASN1;
 using Novensys.ASN1.IO;
 using Novensys.ASN1.Type;
-using Novensys.eCard.SDK.ASN1;
+using Novensys.eCard.SDK.offline.ASN1;
 using System;
 using System.Collections;
 using System.ComponentModel;
 
-namespace Novensys.eCard.SDK.ASN1.EHCDG6
+namespace Novensys.eCard.SDK.offline.ASN1.EHCDG6
 {
   [Serializable]
   public class DG6 : Asn1SequenceType

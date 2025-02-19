@@ -6,7 +6,7 @@
 
 using System;
 
-namespace Novensys.eCard.SDK.Entities.SmartCard
+namespace Novensys.eCard.SDK.offline.Entities.SmartCard
 {
   [Serializable]
   public class ExtensiiClinice2

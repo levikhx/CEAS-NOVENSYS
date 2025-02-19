@@ -4,14 +4,14 @@
 // MVID: 59F9E456-D3DA-4066-A4A4-692B516A775E
 // Assembly location: C:\Program Files (x86)\CNAS\SIUI-SPITAL\Novensys.eCard.SDK.dll
 
-using Novensys.eCard.SDK.ISO8583.Exceptions;
-using Novensys.eCard.SDK.ISO8583.FieldValidator;
-using Novensys.eCard.SDK.ISO8583.Formatter;
-using Novensys.eCard.SDK.ISO8583.LengthFormatters;
+using Novensys.eCard.SDK.offline.ISO8583.Exceptions;
+using Novensys.eCard.SDK.offline.ISO8583.FieldValidator;
+using Novensys.eCard.SDK.offline.ISO8583.Formatter;
+using Novensys.eCard.SDK.offline.ISO8583.LengthFormatters;
 using System;
 using System.Text;
 
-namespace Novensys.eCard.SDK.ISO8583
+namespace Novensys.eCard.SDK.offline.ISO8583
 {
   public class FieldDescriptor : IFieldDescriptor
   {

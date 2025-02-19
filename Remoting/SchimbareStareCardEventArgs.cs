@@ -7,7 +7,7 @@
 using Novensys.eCard.SDK;
 using System;
 
-namespace Novensys.eCard.SDK.Remoting
+namespace Novensys.eCard.SDK.offline.Remoting
 {
   [Serializable]
   public class SchimbareStareCardEventArgs

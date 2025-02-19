@@ -7,7 +7,7 @@
 using System;
 using System.Runtime.Remoting;
 
-namespace Novensys.eCard.SDK.Remoting
+namespace Novensys.eCard.SDK.offline.Remoting
 {
   public class CommunicationRemotingServer : BaseRemotingServer
   {

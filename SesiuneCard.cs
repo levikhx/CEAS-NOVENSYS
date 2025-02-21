@@ -619,9 +619,9 @@ namespace Novensys.eCard.SDK.offline
       {
         LogManager.AddSeparatorLine();
         LogManager.FileLog("Start Generare Semnatura");
-        CoduriRaspunsOperatieCard index1 = this.MapEnum(this.TerminalManager.VerificaTerminal(true));
-        if (index1 != CoduriRaspunsOperatieCard.OK)
-          throw new Exception(this.TerminalManager.MesajeRaspunsCard[index1]);
+        //CoduriRaspunsOperatieCard index1 = this.MapEnum(this.TerminalManager.VerificaTerminal(true));
+        //if (index1 != CoduriRaspunsOperatieCard.OK)
+        //  throw new Exception(this.TerminalManager.MesajeRaspunsCard[index1]);
         CoduriRaspunsOperatieCard index2 = this.TerminalManager.VerificaCardValid();
         if (index2 != CoduriRaspunsOperatieCard.OK)
           throw new Exception(this.TerminalManager.MesajeRaspunsCard[index2]);
